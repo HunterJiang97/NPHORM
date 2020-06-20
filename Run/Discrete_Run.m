@@ -62,13 +62,6 @@ for i = [11];
             % Parameter k (kernel width)
             obj.parameters.C = 10.^(-3:3);
             obj.parameters.k = 10.^(-3:3);
-        case 8
-            Algorithm = REDSVM();
-            name = 'REDSVM';
-            % Parameter C (Cost)
-            % Parameter k (kernel width)
-            obj.parameters.C = 10.^(-3:3);
-            obj.parameters.k = 10.^(-3:3);
         case 9
             Algorithm = NPSVOR();  % matlab code
             name = 'NPSVOR';
@@ -78,13 +71,6 @@ for i = [11];
             obj.parameters.C = 10.^(-3:3);
             obj.parameters.k = 10.^(-3:3);
             obj.parameters.e = [0.2];
-        case 10
-            Algorithm = OPBE();
-            name = 'OPBE';
-            % Parameter C (Cost)
-            % Parameter k (kernel width)
-            obj.parameters.C = 10.^(-3:3);
-            obj.parameters.k = 10.^(-3:3);
         case 11
             Algorithm = NPHORM();
             name = 'NPHORM';
